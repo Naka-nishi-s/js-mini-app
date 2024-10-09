@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書籍表示アプリ</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>書籍表示アプリ</h1>
+      <h2>書籍一覧</h2>
+      <div>
+        <table id="bookList" border="1">
+          <thead>
+            <tr>
+              <th>タイトル</th>
+              <th>著者</th>
+              <th>日付</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <button onclick="addBook()">書籍追加</button>
+        <button onclick="removeBook()">書籍削除</button>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+
+</html>

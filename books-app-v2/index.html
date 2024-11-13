@@ -17,12 +17,12 @@
         <header>
             <div class="header-area">
                 <h2>Book Memo</h2>
-                <div>
-                    <form onsubmit="handleSubmit(event)">
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <form onsubmit="handleSubmit(event)" style="display: flex; gap: 10px; align-items: center;">
                         <input type="text" class="search-input" id="searchInput" placeholder="検索...">
-                        <button type="submit">検索</button>
+                        <input type="submit" value="検索">
                     </form>
-
+                    <button onclick="clearData()">クリア</button>
                 </div>
             </div>
         </header>
@@ -40,7 +40,7 @@
                 </thead>
                 <tbody id="tbody">
                     <tr class="box0">
-                        <td>例</td>
+                        <td>0</td>
                         <td>時給300円の死神</td>
                         <td>藤まる</td>
                         <td>yyyy/mm/dd(aaa)</td>
@@ -49,6 +49,7 @@
                     </tr>
                 </tbody>
             </table>
+
         </div>
         <script src="index.js"></script>
     </body>
